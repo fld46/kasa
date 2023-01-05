@@ -3,7 +3,8 @@ console.log(logementListe);
 function Logements() {
     return (
         <ul>
-            <li>{logementListe.title}</li>
+            {logementListe.map((logement) => (<li key={logement.id}>{logement.title}</li>))}
+
         </ul>
     );
 }
