@@ -1,12 +1,24 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Cards from "../../components/Cards";
 import logementListe from '../../datas/logements.json';
-console.log(logementListe.find(({ id }) => id === "b9123946"));
+
 function Logements() {
     return (
-        <ul>
-            {logementListe.map((logement) => (<li key={logement.id}>{logement.title}</li>))}
-        </ul>
+        <section>
+            {logementListe.map((logement) => {
+                return (
+                    <article key={logement.id}>
+                        <Link to={`/logement/${logement.id}`}>
+                            <Cards image={logement.cover} title={logement.title} />
+                        </Link>
+                    </article>
+                );
+            })}
+        </section>
+
     );
-}
+};
 
 
 export default Logements;
