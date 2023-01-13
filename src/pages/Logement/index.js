@@ -1,5 +1,8 @@
 import { useParams } from 'react-router-dom';
 import logementListe from '../../datas/logements.json';
+import Host from '../../components/Host';
+import Tags from '../../components/Tags';
+import Note from '../../components/Notes';
 import Error from '../../components/Error';
 
 function Logement() {
@@ -9,7 +12,13 @@ function Logement() {
         return (<Error />)
     } else {
         return (
-            <div >{logement.title}</div>
+            <div >
+                {logement.title}
+                <Host host={logement.host} />
+                <Tags getTag={logement.tags} />
+                <Note notes={logement.rating} />
+
+            </div>
         )
     }
 
