@@ -7,6 +7,8 @@ import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Error from './components/Error';
+import './styles/index.scss';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

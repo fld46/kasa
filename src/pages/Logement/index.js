@@ -3,6 +3,8 @@ import logementListe from '../../datas/logements.json';
 import Host from '../../components/Host';
 import Tags from '../../components/Tags';
 import Note from '../../components/Notes';
+import Collapse from '../../components/Collapse';
+import Carousel from '../../components/Carousel';
 import Error from '../../components/Error';
 
 function Logement() {
@@ -14,10 +16,12 @@ function Logement() {
         return (
             <div >
                 {logement.title}
+                <Carousel slides={logement.pictures} />
                 <Host host={logement.host} />
                 <Tags getTag={logement.tags} />
                 <Note notes={logement.rating} />
-
+                <Collapse title="description" content={logement.description} />
+                <Collapse title="equipements" content={logement.equipments} />
             </div>
         )
     }
