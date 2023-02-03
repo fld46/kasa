@@ -5,7 +5,7 @@ import logementListe from '../../datas/logements.json';
 
 function Logements() {
     return (
-        <section>
+        <section className="home__products">
             {logementListe.map((logement) => {
                 return (
                     <article key={logement.id}>

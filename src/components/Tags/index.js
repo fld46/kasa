@@ -2,8 +2,8 @@ import React from "react";
 
 function Tags({ getTag }) {
     return (
-        <div >
-            <p>{getTag}</p>
+        <div className="tag">
+            <p className="tag__text">{getTag}</p>
         </div>
     );
 };

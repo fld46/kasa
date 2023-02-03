@@ -1,24 +1,31 @@
 import React from "react";
 
-
+import redstar from "../../assets/redStar.svg";
+import greystar from "../../assets/greyStar.svg";
 
 function Notes({ notes }) {
     const stars = [1, 2, 3, 4, 5];
-
     return (
-        <div >
+        <div className="rating">
             {/* boucle pour afficher une etoile par note */}
             {stars.map((star) =>
                 notes >= star ? (
-                    <div key={star.toString()}>x</div>
-
-
+                    <img
+                        key={star.toString()}
+                        className="rating__icon"
+                        src={redstar}
+                        alt=""
+                    />
                 ) : (
-                    <div key={star.toString()}>0</div>
+                    <img
+                        key={star.toString()}
+                        className="rating__icon"
+                        src={greystar}
+                        alt=""
+                    />
                 )
             )}
         </div>
     );
 };
-
 export default Notes;

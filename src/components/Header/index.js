@@ -4,15 +4,15 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 function Header() {
     return (
-        <nav >
+        <nav className="navbar">
             <NavLink to="/">
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" className="navbar__img" />
             </NavLink>
-            <div >
-                <NavLink to="/" >
+            <div className="navbar__links">
+                <NavLink to="/" className="navbar__links__style">
                     Accueil
                 </NavLink>
-                <NavLink to="/about" >
+                <NavLink to="/about" className="navbar__links__style">
                     About
                 </NavLink>
             </div>
