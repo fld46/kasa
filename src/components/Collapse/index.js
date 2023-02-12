@@ -14,7 +14,7 @@ const Collapse = ({ title, content }) => {
     }
 
     return (
-        <div className="collapse">
+        <div className="collapse ">
             <button type="button" className="collapse__button" onClick={isCollapse}>
                 {title}
                 <p className={classAnim}>&lt;</p>

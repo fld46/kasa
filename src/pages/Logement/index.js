@@ -14,7 +14,7 @@ function Logement() {
         return (<Error />)
     } else {
         return (
-            <main className='singleProduct'>
+            <main className='singleproduct'>
                 <Carousel slides={logement.pictures} />
                 <div className="singleproduct__content">
                     <div className="singleproduct__informations">
