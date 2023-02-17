@@ -8,8 +8,10 @@
 
     .errorNumber {
         margin: 66px;
-        width: 599px;
+        width: 100%;
         height: 263px;
+
+
     }
 
     .errorText {
@@ -29,7 +31,7 @@
 
 @media screen and (max-width: 750px) {
     .errorNumber {
-        width: 198px;
+        width: 200px;
         height: 99px;
     }
 

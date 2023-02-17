@@ -2,6 +2,7 @@
     color: $white;
     margin-bottom: 20px;
 
+
     @for $i from 1 through 4 {
         &:nth-of-type(#{$i}) {
             $delay: 120ms * $i;
@@ -23,7 +24,9 @@
         height: 30px;
         cursor: pointer;
         position: relative;
+        font-size: large;
         z-index: 1;
+        text-transform: capitalize;
 
         @include media-query(small) {
             height: 38px;
@@ -104,6 +107,7 @@
 }
 
 .rotate {
+    transition: transform 300ms;
     transform: rotate(270deg);
 }
 
