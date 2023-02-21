@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Collapse = ({ title, content }) => {
     const [open, setOpen] = useState(false);
@@ -8,7 +8,7 @@ const Collapse = ({ title, content }) => {
 
     let classAnim = "";
     if (open) {
-        classAnim += " rotate";
+        classAnim = "collapse__arrow rotate";
     } else {
         classAnim = "collapse__arrow";
     }

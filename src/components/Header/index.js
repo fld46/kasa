@@ -11,6 +11,13 @@ function Header() {
     } else {
         classLiensA += " underline";
     }
+    const location = window.location.href;
+    if (location.endsWith('about')) {
+        if (!liens) {
+            setLiens(true)
+        }
+    }
+
     return (
         <nav className="navbar">
             <NavLink to="/">

@@ -1,3 +1,5 @@
+import React from "react"
+import { NavLink } from "react-router-dom";
 function Error() {
     return (
         <div className="error">
@@ -18,6 +20,11 @@ function Error() {
             <h3 className="errorText">
                 Oups! La page que vous demandez n'existe pas.
             </h3>
+            <div className="links">
+                <NavLink to="/" className="links__style">
+                    Retourner à la page d'accueil
+                </NavLink>
+            </div>
         </div>
     )
 }
