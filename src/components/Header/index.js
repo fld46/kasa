@@ -28,7 +28,7 @@ function Header() {
                     Accueil
                 </NavLink>
                 <NavLink to="/about" className={classLiensB} onClick={() => setLiens(true)}>
-                    About
+                    A propos
                 </NavLink>
             </div>
         </nav>

@@ -3,6 +3,7 @@
     margin-bottom: 20px;
 
 
+
     @for $i from 1 through 4 {
         &:nth-of-type(#{$i}) {
             $delay: 120ms * $i;
@@ -75,6 +76,7 @@
         margin: 0;
         font-size: 12px;
         color: #FF6060;
+        background: #F7F7F7;
 
         @include media-query(medium) {
             font-size: 14px;
@@ -91,6 +93,7 @@
         margin: 0;
         font-size: 12px;
         color: #FF6060;
+        background: #F7F7F7;
 
         @include media-query(medium) {
             font-size: 14px;
